@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC256C072064BD3E000EAE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C062064BD3E000EAE1F /* AppDelegate.m */; };
+		EC256C0A2064BD3E000EAE1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C092064BD3E000EAE1F /* ViewController.m */; };
+		EC256C0C2064BD3E000EAE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC256C0B2064BD3E000EAE1F /* Assets.xcassets */; };
+		EC256C0F2064BD3E000EAE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC256C0D2064BD3E000EAE1F /* Main.storyboard */; };
+		EC256C122064BD3E000EAE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C112064BD3E000EAE1F /* main.m */; };
+		EC256C1D2064BD3E000EAE1F /* MACAPP1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C1C2064BD3E000EAE1F /* MACAPP1Tests.m */; };
+		EC256C282064BD3E000EAE1F /* MACAPP1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C272064BD3E000EAE1F /* MACAPP1UITests.m */; };
+		EC256C402064CD8A000EAE1F /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C372064CD8A000EAE1F /* ORSSerialBuffer.m */; };
+		EC256C412064CD8A000EAE1F /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C392064CD8A000EAE1F /* ORSSerialPacketDescriptor.m */; };
+		EC256C422064CD8A000EAE1F /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C3B2064CD8A000EAE1F /* ORSSerialPort.m */; };
+		EC256C432064CD8A000EAE1F /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C3D2064CD8A000EAE1F /* ORSSerialPortManager.m */; };
+		EC256C442064CD8A000EAE1F /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC256C3F2064CD8A000EAE1F /* ORSSerialRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC256C192064BD3E000EAE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC256BFA2064BD3E000EAE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC256C012064BD3E000EAE1F;
+			remoteInfo = MACAPP1;
+		};
+		EC256C242064BD3E000EAE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC256BFA2064BD3E000EAE1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC256C012064BD3E000EAE1F;
+			remoteInfo = MACAPP1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC256C022064BD3E000EAE1F /* MACAPP1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACAPP1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC256C052064BD3E000EAE1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC256C062064BD3E000EAE1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC256C082064BD3E000EAE1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC256C092064BD3E000EAE1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC256C0B2064BD3E000EAE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC256C0E2064BD3E000EAE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC256C102064BD3E000EAE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC256C112064BD3E000EAE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC256C132064BD3E000EAE1F /* MACAPP1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MACAPP1.entitlements; sourceTree = "<group>"; };
+		EC256C182064BD3E000EAE1F /* MACAPP1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACAPP1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC256C1C2064BD3E000EAE1F /* MACAPP1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACAPP1Tests.m; sourceTree = "<group>"; };
+		EC256C1E2064BD3E000EAE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC256C232064BD3E000EAE1F /* MACAPP1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACAPP1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC256C272064BD3E000EAE1F /* MACAPP1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MACAPP1UITests.m; sourceTree = "<group>"; };
+		EC256C292064BD3E000EAE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC256C362064CD8A000EAE1F /* ORSSerialBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		EC256C372064CD8A000EAE1F /* ORSSerialBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		EC256C382064CD8A000EAE1F /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		EC256C392064CD8A000EAE1F /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		EC256C3A2064CD8A000EAE1F /* ORSSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		EC256C3B2064CD8A000EAE1F /* ORSSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		EC256C3C2064CD8A000EAE1F /* ORSSerialPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		EC256C3D2064CD8A000EAE1F /* ORSSerialPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		EC256C3E2064CD8A000EAE1F /* ORSSerialRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
+		EC256C3F2064CD8A000EAE1F /* ORSSerialRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC256BFF2064BD3E000EAE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C152064BD3E000EAE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C202064BD3E000EAE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC256BF92064BD3E000EAE1F = {
+			isa = PBXGroup;
+			children = (
+				EC256C042064BD3E000EAE1F /* MACAPP1 */,
+				EC256C1B2064BD3E000EAE1F /* MACAPP1Tests */,
+				EC256C262064BD3E000EAE1F /* MACAPP1UITests */,
+				EC256C032064BD3E000EAE1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC256C032064BD3E000EAE1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC256C022064BD3E000EAE1F /* MACAPP1.app */,
+				EC256C182064BD3E000EAE1F /* MACAPP1Tests.xctest */,
+				EC256C232064BD3E000EAE1F /* MACAPP1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC256C042064BD3E000EAE1F /* MACAPP1 */ = {
+			isa = PBXGroup;
+			children = (
+				EC256C352064CD8A000EAE1F /* ThirdParty */,
+				EC256C052064BD3E000EAE1F /* AppDelegate.h */,
+				EC256C062064BD3E000EAE1F /* AppDelegate.m */,
+				EC256C082064BD3E000EAE1F /* ViewController.h */,
+				EC256C092064BD3E000EAE1F /* ViewController.m */,
+				EC256C0B2064BD3E000EAE1F /* Assets.xcassets */,
+				EC256C0D2064BD3E000EAE1F /* Main.storyboard */,
+				EC256C102064BD3E000EAE1F /* Info.plist */,
+				EC256C112064BD3E000EAE1F /* main.m */,
+				EC256C132064BD3E000EAE1F /* MACAPP1.entitlements */,
+			);
+			path = MACAPP1;
+			sourceTree = "<group>";
+		};
+		EC256C1B2064BD3E000EAE1F /* MACAPP1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC256C1C2064BD3E000EAE1F /* MACAPP1Tests.m */,
+				EC256C1E2064BD3E000EAE1F /* Info.plist */,
+			);
+			path = MACAPP1Tests;
+			sourceTree = "<group>";
+		};
+		EC256C262064BD3E000EAE1F /* MACAPP1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC256C272064BD3E000EAE1F /* MACAPP1UITests.m */,
+				EC256C292064BD3E000EAE1F /* Info.plist */,
+			);
+			path = MACAPP1UITests;
+			sourceTree = "<group>";
+		};
+		EC256C352064CD8A000EAE1F /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				EC256C362064CD8A000EAE1F /* ORSSerialBuffer.h */,
+				EC256C372064CD8A000EAE1F /* ORSSerialBuffer.m */,
+				EC256C382064CD8A000EAE1F /* ORSSerialPacketDescriptor.h */,
+				EC256C392064CD8A000EAE1F /* ORSSerialPacketDescriptor.m */,
+				EC256C3A2064CD8A000EAE1F /* ORSSerialPort.h */,
+				EC256C3B2064CD8A000EAE1F /* ORSSerialPort.m */,
+				EC256C3C2064CD8A000EAE1F /* ORSSerialPortManager.h */,
+				EC256C3D2064CD8A000EAE1F /* ORSSerialPortManager.m */,
+				EC256C3E2064CD8A000EAE1F /* ORSSerialRequest.h */,
+				EC256C3F2064CD8A000EAE1F /* ORSSerialRequest.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC256C012064BD3E000EAE1F /* MACAPP1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC256C2C2064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1" */;
+			buildPhases = (
+				EC256BFE2064BD3E000EAE1F /* Sources */,
+				EC256BFF2064BD3E000EAE1F /* Frameworks */,
+				EC256C002064BD3E000EAE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MACAPP1;
+			productName = MACAPP1;
+			productReference = EC256C022064BD3E000EAE1F /* MACAPP1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC256C172064BD3E000EAE1F /* MACAPP1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC256C2F2064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1Tests" */;
+			buildPhases = (
+				EC256C142064BD3E000EAE1F /* Sources */,
+				EC256C152064BD3E000EAE1F /* Frameworks */,
+				EC256C162064BD3E000EAE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC256C1A2064BD3E000EAE1F /* PBXTargetDependency */,
+			);
+			name = MACAPP1Tests;
+			productName = MACAPP1Tests;
+			productReference = EC256C182064BD3E000EAE1F /* MACAPP1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC256C222064BD3E000EAE1F /* MACAPP1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC256C322064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1UITests" */;
+			buildPhases = (
+				EC256C1F2064BD3E000EAE1F /* Sources */,
+				EC256C202064BD3E000EAE1F /* Frameworks */,
+				EC256C212064BD3E000EAE1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC256C252064BD3E000EAE1F /* PBXTargetDependency */,
+			);
+			name = MACAPP1UITests;
+			productName = MACAPP1UITests;
+			productReference = EC256C232064BD3E000EAE1F /* MACAPP1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC256BFA2064BD3E000EAE1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = admindyn;
+				TargetAttributes = {
+					EC256C012064BD3E000EAE1F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					EC256C172064BD3E000EAE1F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC256C012064BD3E000EAE1F;
+					};
+					EC256C222064BD3E000EAE1F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC256C012064BD3E000EAE1F;
+					};
+				};
+			};
+			buildConfigurationList = EC256BFD2064BD3E000EAE1F /* Build configuration list for PBXProject "MACAPP1" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC256BF92064BD3E000EAE1F;
+			productRefGroup = EC256C032064BD3E000EAE1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC256C012064BD3E000EAE1F /* MACAPP1 */,
+				EC256C172064BD3E000EAE1F /* MACAPP1Tests */,
+				EC256C222064BD3E000EAE1F /* MACAPP1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC256C002064BD3E000EAE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC256C0C2064BD3E000EAE1F /* Assets.xcassets in Resources */,
+				EC256C0F2064BD3E000EAE1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C162064BD3E000EAE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C212064BD3E000EAE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC256BFE2064BD3E000EAE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC256C0A2064BD3E000EAE1F /* ViewController.m in Sources */,
+				EC256C122064BD3E000EAE1F /* main.m in Sources */,
+				EC256C442064CD8A000EAE1F /* ORSSerialRequest.m in Sources */,
+				EC256C412064CD8A000EAE1F /* ORSSerialPacketDescriptor.m in Sources */,
+				EC256C422064CD8A000EAE1F /* ORSSerialPort.m in Sources */,
+				EC256C402064CD8A000EAE1F /* ORSSerialBuffer.m in Sources */,
+				EC256C432064CD8A000EAE1F /* ORSSerialPortManager.m in Sources */,
+				EC256C072064BD3E000EAE1F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C142064BD3E000EAE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC256C1D2064BD3E000EAE1F /* MACAPP1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC256C1F2064BD3E000EAE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC256C282064BD3E000EAE1F /* MACAPP1UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC256C1A2064BD3E000EAE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC256C012064BD3E000EAE1F /* MACAPP1 */;
+			targetProxy = EC256C192064BD3E000EAE1F /* PBXContainerItemProxy */;
+		};
+		EC256C252064BD3E000EAE1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC256C012064BD3E000EAE1F /* MACAPP1 */;
+			targetProxy = EC256C242064BD3E000EAE1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC256C0D2064BD3E000EAE1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC256C0E2064BD3E000EAE1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC256C2A2064BD3E000EAE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC256C2B2064BD3E000EAE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EC256C2D2064BD3E000EAE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC256C2E2064BD3E000EAE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC256C302064BD3E000EAE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MACAPP1.app/Contents/MacOS/MACAPP1";
+			};
+			name = Debug;
+		};
+		EC256C312064BD3E000EAE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MACAPP1.app/Contents/MacOS/MACAPP1";
+			};
+			name = Release;
+		};
+		EC256C332064BD3E000EAE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MACAPP1;
+			};
+			name = Debug;
+		};
+		EC256C342064BD3E000EAE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 58W4HKZ65K;
+				INFOPLIST_FILE = MACAPP1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bjcric1.com.MACAPP1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MACAPP1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC256BFD2064BD3E000EAE1F /* Build configuration list for PBXProject "MACAPP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC256C2A2064BD3E000EAE1F /* Debug */,
+				EC256C2B2064BD3E000EAE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC256C2C2064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC256C2D2064BD3E000EAE1F /* Debug */,
+				EC256C2E2064BD3E000EAE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC256C2F2064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC256C302064BD3E000EAE1F /* Debug */,
+				EC256C312064BD3E000EAE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC256C322064BD3E000EAE1F /* Build configuration list for PBXNativeTarget "MACAPP1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC256C332064BD3E000EAE1F /* Debug */,
+				EC256C342064BD3E000EAE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC256BFA2064BD3E000EAE1F /* Project object */;
+}
